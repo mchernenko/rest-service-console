@@ -1,0 +1,9 @@
+@(message: String)(implicit request: play.api.mvc.Request[Any])
+
+@main(message) {
+    <textarea id="console" readonly="true"></textarea>
+
+    <script type="text/javascript">
+    connect("ws://@request.host@routes.WebSocketController.restfulConsole");
+    </script>
+}
