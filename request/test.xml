@@ -28,6 +28,6 @@
   <option name="haveTextToSend" value="true" />
   <option name="haveFileToSend" value="false" />
   <option name="isFileUpload" value="false" />
-  <option name="textToSend" value="{&quot;jobId&quot;: &quot;158645996312&quot;, &quot;pageCount&quot;: 123, &quot;printerName&quot;: &quot;KYO85696932&quot;}" />
+  <option name="textToSend" value="{&quot;jobId&quot;: 123, &quot;pageCount&quot;: 123, &quot;printerName&quot;: &quot;KYO85696932&quot;}" />
   <option name="filesToSend" value="" />
 </RestClientRequest>
