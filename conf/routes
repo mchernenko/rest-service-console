@@ -3,11 +3,15 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index
+GET     /                                                   controllers.Application.index
 
-GET     /console                    controllers.WebSocketController.restfulConsole
+GET     /console                                            controllers.WebSocketController.restfulConsole
 
-POST    /JobData                    controllers.RESTServiceController.submitJobData
+POST    /JobData                                            controllers.RESTServiceController.submitJobData
+
+POST    /DesktopCompanion/PortMon/Authenticate              controllers.RESTServiceController.authenticate
+POST    /DesktopCompanion/PortMon/StartJob/PostPjlData      controllers.RESTServiceController.startJob
+POST    /DesktopCompanion/PortMon/EndJob/JobSpooled         controllers.RESTServiceController.endJob
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
